@@ -26,6 +26,7 @@ public class ListenerImplementation extends BaseClass implements ITestListener{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./screenshots/"+name+".png");
+		System.out.println("-------------------");
 		try {
 			FileUtils.copyFile(src, dest);
 		} catch (IOException e) {
