@@ -15,6 +15,7 @@ public String readPropertyData(String key) throws IOException {
 	pobj.load(fis);
 	String value = pobj.getProperty(key);
 	return value;
+	System.out.println(value);
 }
 public String readExcelData(String sheetName, int row, int cell) throws EncryptedDocumentException, IOException {
 	FileInputStream fis = new FileInputStream("./data/testscript.xlsx");
